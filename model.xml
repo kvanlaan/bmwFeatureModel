@@ -3,8 +3,6 @@
 		<properties/>
 		<struct>
 			<and abstract="true" mandatory="true" name="Car">
-				<feature name="TrackHandling"/>
-				<feature name="DrivingAssistance"/>
 				<alt mandatory="true" name="Drivetrain">
 					<feature name="sDrive RWD"/>
 					<feature name="xDrive AWD"/>
@@ -32,20 +30,6 @@
 					<alt name="NonMetallic">
 						<feature name="AlpineWhite"/>
 						<feature name="JetBlack"/>
-					</alt>
-				</alt>
-				<alt mandatory="true" name="Upholstery">
-					<alt name="Leather">
-						<feature name="Black Dakota with Red highlight and Red Stitching"/>
-						<feature name="Coral Red Dakota with Black highlight"/>
-						<feature name="Oyster Dakota"/>
-						<feature name="Cognac Dakota w/brown highlight"/>
-					</alt>
-					<alt name="Leatherette">
-						<feature name="Sensatec Oyster/Black"/>
-						<feature name="Black SensaTec with Red Stitching"/>
-						<feature name="Black SensaTec"/>
-						<feature name="NewFeature3"/>
 					</alt>
 				</alt>
 				<alt mandatory="true" name="Wheel">
