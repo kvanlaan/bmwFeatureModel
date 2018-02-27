@@ -44,7 +44,7 @@
 					<feature name="Fineline Pure Wood Trim w/pearl chrome highlight"/>
 					<feature name="Fineline Stream Wood Trim w/pearl chrome highlight"/>
 				</alt>
-				<alt name="Design">
+				<alt mandatory="true" name="Design">
 					<feature name="Sport Line Design"/>
 					<feature name="Luxury Design "/>
 					<feature name="M Sport Design"/>
