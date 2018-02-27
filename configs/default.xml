@@ -1,2 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-	<configuration/>
+	<configuration>
+		<feature automatic="selected" name="Car"/>
+		<feature automatic="selected" name="Drivetrain"/>
+		<feature manual="selected" name="sDrive RWD"/>
+		<feature automatic="unselected" name="xDrive AWD"/>
+		<feature automatic="selected" name="CarBody"/>
+		<feature manual="selected" name="Coupe"/>
+		<feature automatic="unselected" name="Convertibile "/>
+		<feature automatic="selected" name="FuelInjection"/>
+		<feature manual="selected" name="230i"/>
+		<feature automatic="unselected" name="M240i"/>
+		<feature automatic="selected" name="Color"/>
+		<feature automatic="selected" manual="selected" name="Metallic"/>
+		<feature manual="selected" name="BlackSapphire"/>
+		<feature automatic="unselected" name="Melbourne Red"/>
+		<feature automatic="unselected" name="GlacierSilver"/>
+		<feature automatic="unselected" name="MineralWhite"/>
+		<feature automatic="unselected" name="MineralGrey"/>
+		<feature automatic="unselected" name="MediterraneanBlue"/>
+		<feature automatic="unselected" name="SeasideBlue"/>
+		<feature automatic="unselected" name="SunsetOrange"/>
+		<feature automatic="unselected" name="NonMetallic"/>
+		<feature automatic="unselected" name="AlpineWhite"/>
+		<feature automatic="unselected" name="JetBlack"/>
+		<feature automatic="selected" name="Wheel"/>
+		<feature automatic="unselected" name="Style725"/>
+		<feature manual="selected" name="Style384 non-Flat"/>
+		<feature automatic="unselected" name="Style384 all-season"/>
+		<feature automatic="unselected" name="Style384 performance"/>
+		<feature automatic="selected" name="Trims"/>
+		<feature automatic="unselected" name="Black High-gloss with Pearl Chrome Accent"/>
+		<feature manual="selected" name="Black high-gloss trim with Coral Red matte accent"/>
+		<feature automatic="unselected" name="Fineline Pure Wood Trim w/pearl chrome highlight"/>
+		<feature automatic="unselected" name="Fineline Stream Wood Trim w/pearl chrome highlight"/>
+		<feature automatic="selected" name="Design"/>
+		<feature manual="selected" name="Sport Line Design"/>
+		<feature automatic="unselected" name="Luxury Design "/>
+		<feature automatic="unselected" name="M Sport Design"/>
+	</configuration>

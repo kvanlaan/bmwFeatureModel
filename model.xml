@@ -25,7 +25,10 @@
 						<feature name="Melbourne Red"/>
 						<feature name="GlacierSilver"/>
 						<feature name="MineralWhite"/>
+						<feature name="MineralGrey"/>
 						<feature name="MediterraneanBlue"/>
+						<feature name="SeasideBlue"/>
+						<feature name="SunsetOrange"/>
 					</alt>
 					<alt name="NonMetallic">
 						<feature name="AlpineWhite"/>
