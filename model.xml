@@ -9,52 +9,52 @@
 					<feature name="sDrive RWD"/>
 					<feature name="xDrive AWD"/>
 				</alt>
-				<alt abstract="true" mandatory="true" name="CarBody">
+				<alt mandatory="true" name="CarBody">
 					<feature name="Coupe"/>
 					<feature name="Convertibile "/>
 				</alt>
-				<alt abstract="true" mandatory="true" name="FuelInjection">
+				<alt mandatory="true" name="FuelInjection">
 					<feature name="230i"/>
 					<feature name="M240i"/>
 				</alt>
-				<alt abstract="true" name="Tier">
+				<alt name="Tier">
 					<feature name="Convenience"/>
 					<feature name="Premium"/>
 				</alt>
-				<alt abstract="true" mandatory="true" name="Color">
-					<alt abstract="true" name="Metallic">
+				<alt mandatory="true" name="Color">
+					<alt name="Metallic">
 						<feature name="BlackSapphire"/>
 						<feature name="Melbourne Red"/>
 						<feature name="GlacierSilver"/>
 						<feature name="MineralWhite"/>
 						<feature name="MediterraneanBlue"/>
 					</alt>
-					<alt abstract="true" name="NonMetallic">
+					<alt name="NonMetallic">
 						<feature name="AlpineWhite"/>
 						<feature name="JetBlack"/>
 					</alt>
 				</alt>
-				<alt abstract="true" mandatory="true" name="Upholstery">
-					<alt abstract="true" name="Leather">
+				<alt mandatory="true" name="Upholstery">
+					<alt name="Leather">
 						<feature name="NewFeature1"/>
 						<feature name="NewFeature2"/>
 					</alt>
-					<alt abstract="true" name="Leatherette">
+					<alt name="Leatherette">
 						<feature name="NewFeature3"/>
 						<feature name="NewFeature4"/>
 					</alt>
 				</alt>
-				<alt abstract="true" mandatory="true" name="Wheel">
+				<alt mandatory="true" name="Wheel">
 					<feature name="Style725"/>
 					<feature name="Style384 non-Flat"/>
 					<feature name="Style384 all-season"/>
 					<feature name="Style384 performance"/>
 				</alt>
-				<alt abstract="true" mandatory="true" name="Trims">
+				<alt mandatory="true" name="Trims">
 					<feature name="Pure Wood"/>
 					<feature name="Stream wood"/>
 				</alt>
-				<alt abstract="true" name="Design">
+				<alt name="Design">
 					<feature name="Luxury Design "/>
 					<feature name="M Sport Design"/>
 				</alt>
