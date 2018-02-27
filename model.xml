@@ -5,7 +5,7 @@
 			<and abstract="true" mandatory="true" name="Car">
 				<feature name="TrackHandling"/>
 				<feature name="DrivingAssistance"/>
-				<alt abstract="true" mandatory="true" name="Drivetrain">
+				<alt mandatory="true" name="Drivetrain">
 					<feature name="sDrive RWD"/>
 					<feature name="xDrive AWD"/>
 				</alt>
