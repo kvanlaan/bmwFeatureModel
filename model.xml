@@ -36,12 +36,16 @@
 				</alt>
 				<alt mandatory="true" name="Upholstery">
 					<alt name="Leather">
-						<feature name="NewFeature1"/>
-						<feature name="NewFeature2"/>
+						<feature name="Black Dakota with Red highlight and Red Stitching"/>
+						<feature name="Coral Red Dakota with Black highlight"/>
+						<feature name="Oyster Dakota"/>
+						<feature name="Cognac Dakota w/brown highlight"/>
 					</alt>
 					<alt name="Leatherette">
+						<feature name="Sensatec Oyster/Black"/>
+						<feature name="Black SensaTec with Red Stitching"/>
+						<feature name="Black SensaTec"/>
 						<feature name="NewFeature3"/>
-						<feature name="NewFeature4"/>
 					</alt>
 				</alt>
 				<alt mandatory="true" name="Wheel">
@@ -51,10 +55,13 @@
 					<feature name="Style384 performance"/>
 				</alt>
 				<alt mandatory="true" name="Trims">
-					<feature name="Pure Wood"/>
-					<feature name="Stream wood"/>
+					<feature name="Black High-gloss with Pearl Chrome Accent"/>
+					<feature name="Black high-gloss trim with Coral Red matte accent"/>
+					<feature name="Fineline Pure Wood Trim w/pearl chrome highlight"/>
+					<feature name="Fineline Stream Wood Trim w/pearl chrome highlight"/>
 				</alt>
 				<alt name="Design">
+					<feature name="Sport Line Design"/>
 					<feature name="Luxury Design "/>
 					<feature name="M Sport Design"/>
 				</alt>
