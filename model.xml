@@ -54,7 +54,20 @@
 				</alt>
 			</and>
 		</struct>
-		<constraints/>
+		<constraints>
+			<rule>
+				<imp>
+					<var>Coupe</var>
+					<not>
+						<not>
+							<not>
+								<var>Fineline Stream Wood Trim w/pearl chrome highlight</var>
+							</not>
+						</not>
+					</not>
+				</imp>
+			</rule>
+		</constraints>
 		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
 		<comments/>
 		<featureOrder userDefined="false"/>
