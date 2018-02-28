@@ -44,6 +44,11 @@
 					<feature name="Style461M performance non-runflat"/>
 					<feature name="Style461M all-season"/>
 					<feature name="Style461M performance runflat"/>
+					<and abstract="true" name="Style719">
+						<feature name="style 719M performance non run-flat"/>
+						<feature name="style 719M all-season run-flat"/>
+						<feature name=" style 719M performance non run-flat tires"/>
+					</and>
 				</alt>
 				<alt abstract="true" mandatory="true" name="Trims">
 					<feature name="Black High-gloss with Pearl Chrome Accent"/>
