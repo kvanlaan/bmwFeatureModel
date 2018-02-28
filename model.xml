@@ -3,24 +3,24 @@
 		<properties/>
 		<struct>
 			<and abstract="true" mandatory="true" name="Car">
-				<alt mandatory="true" name="Drivetrain">
+				<alt abstract="true" mandatory="true" name="Drivetrain">
 					<feature name="sDrive RWD"/>
 					<feature name="xDrive AWD"/>
 				</alt>
-				<alt mandatory="true" name="CarBody">
+				<alt abstract="true" mandatory="true" name="CarBody">
 					<feature name="Coupe"/>
 					<feature name="Convertibile "/>
 				</alt>
-				<alt mandatory="true" name="FuelInjection">
+				<alt abstract="true" mandatory="true" name="FuelInjection">
 					<feature name="230i"/>
 					<feature name="M240i"/>
 				</alt>
-				<alt name="Tier">
+				<alt abstract="true" name="Tier">
 					<feature name="Convenience"/>
 					<feature name="Premium"/>
 				</alt>
-				<alt mandatory="true" name="Color">
-					<alt name="Metallic">
+				<alt abstract="true" mandatory="true" name="Color">
+					<alt abstract="true" name="Metallic">
 						<feature name="BlackSapphire"/>
 						<feature name="Melbourne Red"/>
 						<feature name="GlacierSilver"/>
@@ -30,24 +30,24 @@
 						<feature name="SeasideBlue"/>
 						<feature name="SunsetOrange"/>
 					</alt>
-					<alt name="NonMetallic">
+					<alt abstract="true" name="NonMetallic">
 						<feature name="AlpineWhite"/>
 						<feature name="JetBlack"/>
 					</alt>
 				</alt>
-				<alt mandatory="true" name="Wheel">
+				<alt abstract="true" mandatory="true" name="Wheel">
 					<feature name="Style725"/>
 					<feature name="Style384 non-Flat"/>
 					<feature name="Style384 all-season"/>
 					<feature name="Style384 performance"/>
 				</alt>
-				<alt mandatory="true" name="Trims">
+				<alt abstract="true" mandatory="true" name="Trims">
 					<feature name="Black High-gloss with Pearl Chrome Accent"/>
 					<feature name="Black high-gloss trim with Coral Red matte accent"/>
 					<feature name="Fineline Pure Wood Trim w/pearl chrome highlight"/>
 					<feature name="Fineline Stream Wood Trim w/pearl chrome highlight"/>
 				</alt>
-				<alt mandatory="true" name="Design">
+				<alt abstract="true" mandatory="true" name="Design">
 					<feature name="Sport Line Design"/>
 					<feature name="Luxury Design "/>
 					<feature name="M Sport Design"/>
