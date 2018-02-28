@@ -48,9 +48,9 @@
 					<feature name="Style461M performance non run-flat"/>
 					<feature name="Style461M all-season"/>
 					<feature name="Style461M performance run-flat"/>
-					<feature name="Style719M performance non run-flat"/>
+					<feature name="Style719M bi-color performance non run-flat"/>
 					<feature name="Style719M all-season run-flat"/>
-					<feature name="Style719M performance non run-flat tires"/>
+					<feature name="Style719M jet black performance non run-flat "/>
 				</alt>
 				<alt abstract="true" mandatory="true" name="Trims">
 					<feature name="Black High-gloss with Pearl Chrome Accent"/>
@@ -242,8 +242,8 @@
 						<conj>
 							<var>Style719M all-season run-flat</var>
 							<conj>
-								<var>Style719M performance non run-flat</var>
-								<var>Style719M performance non run-flat tires</var>
+								<var>Style719M bi-color performance non run-flat</var>
+								<var>Style719M jet black performance non run-flat </var>
 							</conj>
 						</conj>
 					</conj>
@@ -270,8 +270,30 @@
 						<not>
 							<var>Black high-gloss trim with Coral Red matte accent</var>
 						</not>
-						<var>Style719M performance non run-flat</var>
+						<var>Style719M bi-color performance non run-flat</var>
 					</conj>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<not>
+						<conj>
+							<var>Coupe</var>
+							<conj>
+								<var>sDrive RWD</var>
+								<var>M240i</var>
+							</conj>
+						</conj>
+					</not>
+					<not>
+						<conj>
+							<var>Style719M all-season run-flat</var>
+							<conj>
+								<var>Style719M bi-color performance non run-flat</var>
+								<var>Style719M jet black performance non run-flat </var>
+							</conj>
+						</conj>
+					</not>
 				</imp>
 			</rule>
 		</constraints>
