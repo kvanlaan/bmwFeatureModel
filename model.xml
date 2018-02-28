@@ -29,6 +29,7 @@
 						<feature name="MediterraneanBlue"/>
 						<feature name="SeasideBlue"/>
 						<feature name="SunsetOrange"/>
+						<feature name="EstorilBlue"/>
 					</alt>
 					<alt abstract="true" name="NonMetallic">
 						<feature name="AlpineWhite"/>
@@ -40,12 +41,17 @@
 					<feature name="Style384 non-Flat"/>
 					<feature name="Style384 all-season"/>
 					<feature name="Style384 performance"/>
+					<feature name="Style461M performance non-runflat"/>
+					<feature name="Style461M all-season"/>
+					<feature name="Style461M performance runflat"/>
 				</alt>
 				<alt abstract="true" mandatory="true" name="Trims">
 					<feature name="Black High-gloss with Pearl Chrome Accent"/>
 					<feature name="Black high-gloss trim with Coral Red matte accent"/>
 					<feature name="Fineline Pure Wood Trim w/pearl chrome highlight"/>
 					<feature name="Fineline Stream Wood Trim w/pearl chrome highlight"/>
+					<feature name="Aluminum Hexagon Trim with Black high-gloss highlight"/>
+					<feature name="Aluminum Hexagon Trim with Estoril Blue matte highlight"/>
 				</alt>
 				<alt abstract="true" mandatory="true" name="Design">
 					<feature name="Sport Line Design"/>
@@ -57,14 +63,160 @@
 		<constraints>
 			<rule>
 				<imp>
-					<var>Coupe</var>
-					<not>
+					<conj>
+						<var>sDrive RWD</var>
+						<conj>
+							<var>Coupe</var>
+							<conj>
+								<var>230i</var>
+								<conj>
+									<var>Sport Line Design</var>
+									<not>
+										<var>Tier</var>
+									</not>
+								</conj>
+							</conj>
+						</conj>
+					</conj>
+					<conj>
 						<not>
-							<not>
-								<var>Fineline Stream Wood Trim w/pearl chrome highlight</var>
-							</not>
+							<var>Style384 all-season</var>
 						</not>
+						<not>
+							<var>Fineline Stream Wood Trim w/pearl chrome highlight</var>
+						</not>
+					</conj>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<conj>
+						<var>Coupe</var>
+						<conj>
+							<var>sDrive RWD</var>
+							<conj>
+								<var>230i</var>
+								<var>Luxury Design </var>
+							</conj>
+						</conj>
+					</conj>
+					<conj>
+						<not>
+							<var>Black high-gloss trim with Coral Red matte accent</var>
+						</not>
+						<not>
+							<var>Black High-gloss with Pearl Chrome Accent</var>
+						</not>
+					</conj>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<conj>
+						<var>Coupe</var>
+						<conj>
+							<var>sDrive RWD</var>
+							<conj>
+								<var>230i</var>
+								<var>M Sport Design</var>
+							</conj>
+						</conj>
+					</conj>
+					<conj>
+						<not>
+							<var>Convenience</var>
+						</not>
+						<conj>
+							<not>
+								<var>GlacierSilver</var>
+							</not>
+							<conj>
+								<not>
+									<var>BlackSapphire</var>
+								</not>
+								<conj>
+									<not>
+										<var>MediterraneanBlue</var>
+									</not>
+									<conj>
+										<not>
+											<var>SeasideBlue</var>
+										</not>
+										<conj>
+											<not>
+												<var>Black High-gloss with Pearl Chrome Accent</var>
+											</not>
+											<not>
+												<var>Black high-gloss trim with Coral Red matte accent</var>
+											</not>
+										</conj>
+									</conj>
+								</conj>
+							</conj>
+						</conj>
+					</conj>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<conj>
+						<var>Coupe</var>
+						<conj>
+							<var>sDrive RWD</var>
+							<conj>
+								<var>M240i</var>
+								<var>M Sport Design</var>
+							</conj>
+						</conj>
+					</conj>
+					<conj>
+						<not>
+							<var>BlackSapphire</var>
+						</not>
+						<conj>
+							<not>
+								<var>GlacierSilver</var>
+							</not>
+							<conj>
+								<not>
+									<var>MediterraneanBlue</var>
+								</not>
+								<conj>
+									<not>
+										<var>SeasideBlue</var>
+									</not>
+									<conj>
+										<not>
+											<var>Black High-gloss with Pearl Chrome Accent</var>
+										</not>
+										<not>
+											<var>Black high-gloss trim with Coral Red matte accent</var>
+										</not>
+									</conj>
+								</conj>
+							</conj>
+						</conj>
+					</conj>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<not>
+						<var>M Sport Design</var>
 					</not>
+					<conj>
+						<not>
+							<var>Style461M performance non-runflat</var>
+						</not>
+						<conj>
+							<not>
+								<var>Style461M all-season</var>
+							</not>
+							<not>
+								<var>Style461M performance runflat</var>
+							</not>
+						</conj>
+					</conj>
 				</imp>
 			</rule>
 		</constraints>
