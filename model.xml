@@ -60,7 +60,7 @@
 					<feature name="Aluminum Hexagon Trim with Black high-gloss highlight"/>
 					<feature name="Aluminum Hexagon Trim with Estoril Blue matte highlight"/>
 				</alt>
-				<alt abstract="true" mandatory="true" name="Design">
+				<alt abstract="true" name="Design">
 					<feature name="Sport Line Design"/>
 					<feature name="Luxury Design "/>
 					<feature name="M Sport Design"/>
@@ -71,17 +71,14 @@
 			<rule>
 				<imp>
 					<conj>
-						<var>Coupe</var>
+						<var>sDrive RWD</var>
 						<conj>
-							<var>sDrive RWD</var>
+							<var>230i</var>
 							<conj>
-								<var>230i</var>
-								<conj>
-									<var>Sport Line Design</var>
-									<not>
-										<var>Tier</var>
-									</not>
-								</conj>
+								<var>Sport Line Design</var>
+								<not>
+									<var>Tier</var>
+								</not>
 							</conj>
 						</conj>
 					</conj>
@@ -98,13 +95,10 @@
 			<rule>
 				<imp>
 					<conj>
-						<var>Coupe</var>
+						<var>sDrive RWD</var>
 						<conj>
-							<var>sDrive RWD</var>
-							<conj>
-								<var>230i</var>
-								<var>Luxury Design </var>
-							</conj>
+							<var>230i</var>
+							<var>Luxury Design </var>
 						</conj>
 					</conj>
 					<conj>
@@ -120,61 +114,22 @@
 			<rule>
 				<imp>
 					<conj>
-						<var>Coupe</var>
+						<var>sDrive RWD</var>
 						<conj>
-							<var>sDrive RWD</var>
-							<conj>
-								<var>230i</var>
-								<var>M Sport Design</var>
-							</conj>
+							<var>230i</var>
+							<var>M Sport Design</var>
 						</conj>
 					</conj>
-					<conj>
-						<not>
-							<var>Convenience</var>
-						</not>
-						<conj>
-							<not>
-								<var>GlacierSilver</var>
-							</not>
-							<conj>
-								<not>
-									<var>BlackSapphire</var>
-								</not>
-								<conj>
-									<not>
-										<var>MediterraneanBlue</var>
-									</not>
-									<conj>
-										<not>
-											<var>SeasideBlue</var>
-										</not>
-										<conj>
-											<not>
-												<var>Black High-gloss with Pearl Chrome Accent</var>
-											</not>
-											<not>
-												<var>Black high-gloss trim with Coral Red matte accent</var>
-											</not>
-										</conj>
-									</conj>
-								</conj>
-							</conj>
-						</conj>
-					</conj>
+					<not>
+						<var>Convenience</var>
+					</not>
 				</imp>
 			</rule>
 			<rule>
 				<imp>
 					<conj>
-						<var>Coupe</var>
-						<conj>
-							<var>sDrive RWD</var>
-							<conj>
-								<var>M240i</var>
-								<var>M Sport Design</var>
-							</conj>
-						</conj>
+						<var>sDrive RWD</var>
+						<var>M Sport Design</var>
 					</conj>
 					<conj>
 						<not>
@@ -228,25 +183,26 @@
 			</rule>
 			<rule>
 				<imp>
-					<conj>
-						<var>Coupe</var>
-						<conj>
-							<var>sDrive RWD</var>
-							<var>M240i</var>
-						</conj>
-					</conj>
+					<var>M240i</var>
 					<conj>
 						<not>
-							<var>Black high-gloss trim with Coral Red matte accent</var>
+							<var>Design</var>
 						</not>
-						<conj>
-							<var>Style719M all-season run-flat</var>
-							<conj>
-								<var>Style719M bi-color performance non run-flat</var>
-								<var>Style719M jet black performance non run-flat </var>
-							</conj>
-						</conj>
+						<not>
+							<var>Tier</var>
+						</not>
 					</conj>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<conj>
+						<var>sDrive RWD</var>
+						<var>M240i</var>
+					</conj>
+					<not>
+						<var>Black high-gloss trim with Coral Red matte accent</var>
+					</not>
 				</imp>
 			</rule>
 			<rule>
@@ -261,32 +217,26 @@
 				<imp>
 					<not>
 						<conj>
-							<var>Coupe</var>
-							<conj>
-								<var>sDrive RWD</var>
-								<var>M240i</var>
-							</conj>
+							<var>sDrive RWD</var>
+							<var>M240i</var>
 						</conj>
 					</not>
 					<not>
-						<conj>
+						<disj>
 							<var>Style719M all-season run-flat</var>
-							<conj>
+							<disj>
 								<var>Style719M bi-color performance non run-flat</var>
 								<var>Style719M jet black performance non run-flat </var>
-							</conj>
-						</conj>
+							</disj>
+						</disj>
 					</not>
 				</imp>
 			</rule>
 			<rule>
 				<imp>
 					<conj>
-						<var>Coupe</var>
-						<conj>
-							<var>xDrive AWD</var>
-							<var>M240i</var>
-						</conj>
+						<var>xDrive AWD</var>
+						<var>M240i</var>
 					</conj>
 					<conj>
 						<not>
@@ -294,14 +244,6 @@
 						</not>
 						<var>Style719M bi-color performance non run-flat</var>
 					</conj>
-				</imp>
-			</rule>
-			<rule>
-				<imp>
-					<var>M240i</var>
-					<not>
-						<var>Design</var>
-					</not>
 				</imp>
 			</rule>
 		</constraints>
