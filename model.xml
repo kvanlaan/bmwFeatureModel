@@ -259,23 +259,6 @@
 			</rule>
 			<rule>
 				<imp>
-					<conj>
-						<var>Coupe</var>
-						<conj>
-							<var>xDrive AWD</var>
-							<var>M240i</var>
-						</conj>
-					</conj>
-					<conj>
-						<not>
-							<var>Black high-gloss trim with Coral Red matte accent</var>
-						</not>
-						<var>Style719M bi-color performance non run-flat</var>
-					</conj>
-				</imp>
-			</rule>
-			<rule>
-				<imp>
 					<not>
 						<conj>
 							<var>Coupe</var>
@@ -293,6 +276,31 @@
 								<var>Style719M jet black performance non run-flat </var>
 							</conj>
 						</conj>
+					</not>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<conj>
+						<var>Coupe</var>
+						<conj>
+							<var>xDrive AWD</var>
+							<var>M240i</var>
+						</conj>
+					</conj>
+					<conj>
+						<not>
+							<var>Black high-gloss trim with Coral Red matte accent</var>
+						</not>
+						<var>Style719M bi-color performance non run-flat</var>
+					</conj>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>M240i</var>
+					<not>
+						<var>Design</var>
 					</not>
 				</imp>
 			</rule>
