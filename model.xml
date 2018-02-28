@@ -19,7 +19,7 @@
 					<feature name="Convenience"/>
 					<feature name="Premium"/>
 				</alt>
-				<alt abstract="true" mandatory="true" name="Color">
+				<or abstract="true" mandatory="true" name="Color">
 					<alt abstract="true" name="Metallic">
 						<feature name="BlackSapphire"/>
 						<feature name="Melbourne Red"/>
@@ -35,20 +35,22 @@
 						<feature name="AlpineWhite"/>
 						<feature name="JetBlack"/>
 					</alt>
-				</alt>
+					<and abstract="true" name="RoofColors">
+						<feature name="Moonlight Black"/>
+						<feature name="Brown with silver effects"/>
+					</and>
+				</or>
 				<alt abstract="true" mandatory="true" name="Wheel">
 					<feature name="Style725"/>
 					<feature name="Style384 non-Flat"/>
 					<feature name="Style384 all-season"/>
 					<feature name="Style384 performance"/>
-					<feature name="Style461M performance non-runflat"/>
+					<feature name="Style461M performance non run-flat"/>
 					<feature name="Style461M all-season"/>
-					<feature name="Style461M performance runflat"/>
-					<and abstract="true" name="Style719">
-						<feature name="style 719M performance non run-flat"/>
-						<feature name="style 719M all-season run-flat"/>
-						<feature name=" style 719M performance non run-flat tires"/>
-					</and>
+					<feature name="Style461M performance run-flat"/>
+					<feature name="Style719M performance non run-flat"/>
+					<feature name="Style719M all-season run-flat"/>
+					<feature name="Style719M performance non run-flat tires"/>
 				</alt>
 				<alt abstract="true" mandatory="true" name="Trims">
 					<feature name="Black High-gloss with Pearl Chrome Accent"/>
@@ -69,9 +71,9 @@
 			<rule>
 				<imp>
 					<conj>
-						<var>sDrive RWD</var>
+						<var>Coupe</var>
 						<conj>
-							<var>Coupe</var>
+							<var>sDrive RWD</var>
 							<conj>
 								<var>230i</var>
 								<conj>
@@ -211,17 +213,48 @@
 					</not>
 					<conj>
 						<not>
-							<var>Style461M performance non-runflat</var>
+							<var>Style461M performance non run-flat</var>
 						</not>
 						<conj>
 							<not>
 								<var>Style461M all-season</var>
 							</not>
 							<not>
-								<var>Style461M performance runflat</var>
+								<var>Style461M performance run-flat</var>
 							</not>
 						</conj>
 					</conj>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<conj>
+						<var>Coupe</var>
+						<conj>
+							<var>sDrive RWD</var>
+							<var>M240i</var>
+						</conj>
+					</conj>
+					<conj>
+						<not>
+							<var>Black high-gloss trim with Coral Red matte accent</var>
+						</not>
+						<conj>
+							<var>Style719M all-season run-flat</var>
+							<conj>
+								<var>Style719M performance non run-flat</var>
+								<var>Style719M performance non run-flat tires</var>
+							</conj>
+						</conj>
+					</conj>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>Coupe</var>
+					<not>
+						<var>RoofColors</var>
+					</not>
 				</imp>
 			</rule>
 		</constraints>
