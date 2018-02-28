@@ -257,6 +257,23 @@
 					</not>
 				</imp>
 			</rule>
+			<rule>
+				<imp>
+					<conj>
+						<var>Coupe</var>
+						<conj>
+							<var>xDrive AWD</var>
+							<var>M240i</var>
+						</conj>
+					</conj>
+					<conj>
+						<not>
+							<var>Black high-gloss trim with Coral Red matte accent</var>
+						</not>
+						<var>Style719M performance non run-flat</var>
+					</conj>
+				</imp>
+			</rule>
 		</constraints>
 		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
 		<comments/>
